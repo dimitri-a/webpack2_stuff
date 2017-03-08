@@ -105,7 +105,7 @@ module.exports = function (env) {
         },
 
         plugins: [
-            new ExtractTextPlugin("style.css"),
+            new ExtractTextPlugin("bass.scss"),
         ],
 
         performance: isProd && {

@@ -7,7 +7,7 @@ import Grid from 'components/Grid';
 import TransactionForm from 'containers/TransactionForm';
 import TransactionSummary from 'containers/TransactionSummary';
 import * as AppActions from 'actions';
-import './style.css';
+import './bass.scss';
 
 class App extends Component {
   static propTypes = {
