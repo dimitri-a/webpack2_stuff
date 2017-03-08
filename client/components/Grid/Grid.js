@@ -3,7 +3,7 @@ import Header from './Header';
 import Body from './Body';
 import Row from './Row';
 import Cell from './Cell';
-import './style.css';
+import './style1.css';
 
 const { string, shape, arrayOf, object, node } = PropTypes;
 

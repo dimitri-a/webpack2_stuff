@@ -3,7 +3,6 @@ const path = require('path');
 
 const sourcePath = path.join(__dirname, './client');
 const staticsPath = path.join(__dirname, './static');
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = function (env) {
     const nodeEnv = env && env.prod ? 'production' : 'development';
@@ -88,7 +87,7 @@ module.exports = function (env) {
                     use: [
                         'babel-loader'
                     ],
-                }
+                },
             ],
         },
         resolve: {
@@ -99,13 +98,7 @@ module.exports = function (env) {
             ]
         },
 
-        plugins: [
-            new ExtractTextPlugin('style.scss')
-            //if you want to pass in options, you can do so:
-            //new ExtractTextPlugin({
-            //  filename: 'style.css'
-            //})
-        ],
+        plugins,
 
         performance: isProd && {
             maxAssetSize: 100,
